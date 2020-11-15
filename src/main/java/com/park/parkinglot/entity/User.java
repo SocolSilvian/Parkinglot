@@ -36,9 +36,13 @@ public class User implements Serializable {
         this.id = id;
     }
     private String username;
+    
     private String email;
+    
     private String password;
+    
     private String position;
+    
     @OneToMany(mappedBy = "user")
     private Collection<Car> cars;
     @Override

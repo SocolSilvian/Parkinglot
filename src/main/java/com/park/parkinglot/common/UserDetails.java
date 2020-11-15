@@ -53,5 +53,7 @@ public class UserDetails implements java.io.Serializable {
     public void setPosition(String position) {
         this.position = position;
     }
+
+    
     
 }
