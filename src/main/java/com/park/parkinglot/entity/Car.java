@@ -66,6 +66,9 @@ private User user;
     public void setId(Integer id) {
         this.id = id;
     }
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
 
     @Override
     public int hashCode() {

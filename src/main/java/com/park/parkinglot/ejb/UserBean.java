@@ -38,7 +38,7 @@ public class UserBean {
         }
     }
     
-    private List<UserDetails> copyUsersToDetails(List<User> users) {
+    private List<UserDetails> copyUsersToDetails(List<User> users) {{
         List<UserDetails>detailsList = new ArrayList<>();
         for (User user : users) {
             UserDetails userDetails = new UserDetails(user.getId(), 
@@ -47,7 +47,7 @@ public class UserBean {
                     user.getPosition() );
             detailsList.add(userDetails);
         }
-        return detailsList;
+        return detailsList;}
     }
    
 }
