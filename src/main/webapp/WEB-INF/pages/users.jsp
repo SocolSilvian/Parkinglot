@@ -5,19 +5,19 @@
 
 <t:pageTemplate pageTitle="Users">
     <h1>Users</h1>
-       
-    <c:forEach var="user" items="$(users)" varStatus="status">
+
+    <c:forEach var="user" items="${users}" varStatus="status">
         <div class="row">
-       <div class="col-md-4">
-           ${user.username}
-       </div>
-        <div class="col-md-4">
-           ${user.email}
-        </div>
-         <div class="col-md-4">
-           ${user.position}
-       </div>
+            <div class="col-md-4">
+                ${user.username}
+            </div>
+            <div class="col-md-4">
+                ${user.email}
+            </div>
+            <div class="col-md-4">
+                ${user.position}
+            </div>
         </div>
     </c:forEach>
-    
+
 </t:pageTemplate>
